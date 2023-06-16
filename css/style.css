@@ -36,6 +36,13 @@ img {
   display: block;
 }
 
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
 .list {
   list-style: none
 }
@@ -166,6 +173,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   display: block;
+  color: #434455;
   justify-content: space-between;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -256,6 +264,7 @@ img {
 	top: 50%;
 	left: 50%;
 	width: 408px;
+  padding: 24px;
 	min-height: 584px;
 	border-radius: 4px;
 	background: #fcfcfc;
@@ -295,7 +304,192 @@ img {
 	fill: #ffffff;
 }
 
-/**---------- FEATURE -----------**/
+/*-------------FORM-------------*/
+
+.modal-form {
+  /* min-width: 408px; */
+  outline: 1px solid red;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  
+}
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.modal-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 34px;
+  padding: 24px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+/* text for input */
+/* 
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: -0.02;
+color: ;
+*/
+
+.modal-input:focus {
+  border-color: #4D5AE5;
+}
+
+/* style for placeholder */
+
+.modal-input:focus + .input-icon {
+  stroker: #4D5AE5;
+}
+
+/*
+.modal-input::placeholder,
+.modal-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.04em; 
+  color: #8E8F99;
+}
+*/
+
+/* .modal-input:valid {
+  border-color: #404BBF;
+} */
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  display: inline-block;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #8E8F99;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+
+.input-icon {
+  fill: transparent;
+  stroke: #111111;
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: stroker 300ms linear;
+}
+
+/*  pseudo class for required  */
+/* .modal-input:required {
+  border-color: #4D5AE5;
+} */
+
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  /* background-color: transparent; */
+  padding: 8px 16px;
+  font-size: 18px;  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  /* identical to box height, or 117% */
+  letter-spacing: 0.04em;
+  resize: none;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.modal-textarea:focus {
+  border-color: #4D5AE5;
+}
+
+.modal-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  /* identical to box height, or 117% */
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: block;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.check-text {
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.7;
+ /* or 117% */
+ letter-spacing: 0.04em;
+ color: #8E8F99;
+ display: flex;
+ align-items: center;
+}
+
+.check-text a {
+  color: #4D5AE5;
+  text-decoration: underline;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #404BBF;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-send-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px 32px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+
+.modal-send-btn:hover{
+  background-color: #4D5AE5;
+}
+
+/**========== FEATURE ==========**/
 
 
 .visually-hidden {
@@ -348,6 +542,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: #2e2f42;
 } 
@@ -451,7 +646,7 @@ img {
 .soc-item {
   display: flex;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
   justify-content: center;
 }
 
@@ -466,7 +661,6 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 12px;
   border-radius: 50%;
   background-color: #4D5AE5;
   border: 1px solid #4D5AE5;
@@ -562,8 +756,6 @@ img {
   width: calc((100% - 48px) / 3);
   /* (100%)1128 - 48 = 1080 / 3 = 360 */
   text-decoration: none;
-  position: relative;
-  overflow: hidden;
 }
 
 
