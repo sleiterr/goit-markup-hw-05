@@ -981,6 +981,13 @@ color: ; */
 .footer-bootom {
 
 }
+
+.subscribe-icon {
+  width: 24px; 
+  height: 24px;
+  margin-left: 16px;
+}
+
 .footer-form {
   display: flex;
   gap: 24px;
