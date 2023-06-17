@@ -265,6 +265,7 @@ button {
 	left: 50%;
 	width: 408px;
   padding: 24px;
+  padding-top: 72px;
 	min-height: 584px;
 	border-radius: 4px;
 	background: #fcfcfc;
@@ -308,15 +309,15 @@ button {
 
 .modal-form {
   /* min-width: 408px; */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
   margin-bottom: 16px;
+  /* identical to box height, or 150% */
   text-align: center;
   letter-spacing: 0.02em;
   color: #2E2F42;
@@ -334,7 +335,8 @@ button {
   border-radius: 4px;
   background-color: transparent;
   /* padding-left: 34px; */
-  padding: 24px;
+  padding-left: 38px;
+  /* padding: 24px; */
   outline: transparent;
   transition: border-color 300ms linear;
 }
@@ -349,7 +351,6 @@ color: ; */
 .modal-input:focus {
   border-color: #4D5AE5;
   font-size: 18px;
-  padding-left: 38px;
   line-height: 1.22;
   letter-spacing: -0.02;
   color: #2E2F42;
@@ -358,7 +359,7 @@ color: ; */
 /* style for placeholder */
 
 .modal-input:focus + .input-icon {
-  stroker: #4D5AE5;
+  fill: #4D5AE5;
 }
 
 .modal-input::placeholder {
@@ -390,14 +391,16 @@ color: ; */
 
 
 .input-icon {
-  fill: transparent;
-  stroke: #111111;
+  fill: #111111;
   position: absolute;
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
   transition: stroker 300ms linear;
 }
+
+
+
 
 /*  pseudo class for required  */
 /* .modal-input:required {
@@ -464,6 +467,10 @@ color: ; */
   text-decoration: underline;
 }
 
+.input-check {
+  
+}
+
 .input-check:checked + .check-text span {
   background-color: #404BBF;
   border: none;
@@ -475,7 +482,11 @@ color: ; */
   font-size: 16px;
   line-height: 1.5;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
   text-align: center;
+  display: block;
+  margin: 0 auto;
   letter-spacing: 0.04em;
   color: #FFFFFF;
   background-color: #404BBF;
