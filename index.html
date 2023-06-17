@@ -394,6 +394,17 @@
         </ul>  
       </div>
     </div>  
+    <div class="footer-bootom">
+      <form class="footer-form">
+        <label for="footer-email" aria-label="footer email"></label>
+        <input type="mail" 
+        name="footer-email" 
+        id="footer-email" 
+        placeholder="email"
+        class="footer-input">
+        <button type="submit" class="footer-btn"></button>
+      </form>
+    </div>
   </footer>
   <!-- FORM -->
   <div class="backdrop is-hidden" data-modal>
@@ -423,26 +434,31 @@
         </div>
         <div class="modal-field">
           <label for="user-tel" class="modal-label">Phone</label>
+          <div class="input-wrap">
             <input 
             type="tel"
             id="use-name"  
             name="user-tel" 
             class="modal-input" 
             required />
-            <svg class="input-icon" width="12" height="12">
+            <svg class="input-icon" width="13" height="13">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
+          </div>
         </div>
         <div class="modal-field">
-          <label for="use-email" class="modal-label">Email</label>
+          <label for="user-email" class="modal-label">Email</label>
+          <div class="input-wrap">
             <input 
             type="email" 
+            id="user-email"
             name="user-email" 
             class="modal-input" 
             required />
-            <svg class="input-icon" width="12" height="12">
+            <svg class="input-icon" width="15" height="12">
               <use href="./images/icons.svg#icon-Email"></use>
             </svg>
+          </div>
         </div>
         <div class="modal-field">
           <label for="modal-field" class="modal-label">Comment</label>
@@ -460,7 +476,7 @@
           checked/>
           <label for="policy" class="check-text">
             <span>
-              <svg class="input-icon" width="10" height="8">
+              <svg class="icon-check" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>

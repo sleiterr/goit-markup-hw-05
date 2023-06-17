@@ -316,6 +316,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
+  margin-bottom: 16px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #2E2F42;
@@ -332,22 +333,26 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 34px;
+  /* padding-left: 34px; */
   padding: 24px;
   outline: transparent;
   transition: border-color 300ms linear;
 }
 
 /* text for input */
-/* 
-font-size: 18px;
+
+/* font-size: 18px;
 line-height: 1.22;
 letter-spacing: -0.02;
-color: ;
-*/
+color: ; */
 
 .modal-input:focus {
   border-color: #4D5AE5;
+  font-size: 18px;
+  padding-left: 38px;
+  line-height: 1.22;
+  letter-spacing: -0.02;
+  color: #2E2F42;
 }
 
 /* style for placeholder */
@@ -356,16 +361,13 @@ color: ;
   stroker: #4D5AE5;
 }
 
-/*
-.modal-input::placeholder,
-.modal-textarea::placeholder {
+.modal-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.04em; 
   color: #8E8F99;
 }
-*/
 
 /* .modal-input:valid {
   border-color: #404BBF;
@@ -488,6 +490,22 @@ color: ;
 .modal-send-btn:hover{
   background-color: #4D5AE5;
 }
+
+/* FORM EMAIL */
+
+.footer-bootom {
+  
+}
+.footer-form {
+  
+}
+.footer-input {
+  
+}
+.footer-btn {
+  
+}
+
 
 /**========== FEATURE ==========**/
 
