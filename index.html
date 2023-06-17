@@ -396,8 +396,8 @@
       <div class="footer-bootom">
         <p class="social-text">Subscribe</p>
         <form class="footer-form">
-          <label for="footer-email" aria-label="footer email">
-            <input type="mail" 
+          <label for="footer-email" aria-label="footer-email">
+            <input type="email" 
             name="footer-email" 
             id="footer-email" 
             placeholder="E-mail"
@@ -429,7 +429,7 @@
           <div class="input-wrap">
             <input 
             type="text" 
-            id="use-name" 
+            id="user-name" 
             name="user-name" 
             class="modal-input" 
             required />
@@ -439,11 +439,11 @@
           </div>
         </div>
         <div class="modal-field">
-          <label for="user-tel" class="modal-label">Phone</label>
+          <label for="user-phon" class="modal-label">Phone</label>
           <div class="input-wrap">
             <input 
             type="tel"
-            id="use-name"  
+            id="user-phon"  
             name="user-tel" 
             class="modal-input" 
             required />
@@ -468,8 +468,9 @@
         </div>
         <div class="modal-field">
           <label for="modal-field" class="modal-label">Comment</label>
-          <textarea 
-          name="modal-text" 
+          <textarea
+          id="modal-field" 
+          name="modal-field" 
           placeholder="Text input" 
           class="modal-textarea"></textarea>
         </div>
@@ -478,8 +479,7 @@
           name="policy" 
           id="policy" 
           class="input-check visually-hidden" 
-          value="true"
-          checked/>
+          value="true"/>
           <label for="policy" class="check-text">
             <span>
               <svg class="icon-check" width="10" height="8">
