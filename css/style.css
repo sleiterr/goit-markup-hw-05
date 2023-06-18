@@ -450,13 +450,10 @@ color: ; */
   border-radius: 2px;
   display: inline-flex;
   margin-right: 8px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  fill: #F4F4FD;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .check-text {
@@ -507,12 +504,12 @@ color: ; */
   background-color: #4D5AE5;
 }
 
-/* .check-policy {
+.check-policy {
   fill: #F4F4FD;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 
 /**========== FEATURE ==========**/
