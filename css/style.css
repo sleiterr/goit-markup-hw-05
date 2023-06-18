@@ -450,7 +450,7 @@ color: ; */
   border-radius: 2px;
   display: inline-flex;
   margin-right: 8px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   fill: #F4F4FD;
