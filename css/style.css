@@ -4,7 +4,7 @@
   --subtitle-text: #434455;
   --active-links: #4d5ae5;
   --white-background: #FFFFFF;
-  --light-backgrounds: #F4F4FD;
+  --light-background: #F4F4FD;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
@@ -474,7 +474,7 @@ color: ; */
 .input-check:checked + .check-text span {
   background-color: #404BBF;
   border: none;
-  fill: #F4F4FD;
+  fill: var(--light-background);
 }
 
 .modal-send-btn {
