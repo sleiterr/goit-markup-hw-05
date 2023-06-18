@@ -325,6 +325,10 @@ button {
 }
 
 .modal-field {
+  margin-bottom: 16px;
+}
+
+.modal-area {
   margin-bottom: 8px;
 }
 
