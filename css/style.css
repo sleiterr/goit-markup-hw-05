@@ -379,7 +379,7 @@ color: ; */
   font-size: 12px;
   line-height: 1.17;
   margin-bottom: 4px;
-  display: block;
+  /* display: block; */
   /* identical to box height */
   letter-spacing: 0.04em;
   color: #8E8F99;
